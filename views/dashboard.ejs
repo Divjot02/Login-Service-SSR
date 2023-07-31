@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <style>
+        .dashboard {
+            /* border: 1px solid #ccc; */
+            padding: 20px;
+            max-width: 80%;
+            margin: 0 auto;
+            background-color: #c0d6ea;
+            border-radius: 12px;
+        }
+
+        .dashboard-bar {
+            margin: 0;
+            max-width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="dashboard-bar">
+            <h2>Dashboard</h2>
+            <%- include("components/header.ejs", username) %>
+        </div>
+
+
+        <%- include("components/data.ejs", email) %>
+            <button id="logoutButton"><a href="/logout">Logout</a></button>
+    </div>
+</body>
+
+</html>
